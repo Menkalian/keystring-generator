@@ -1,4 +1,4 @@
-# keygen-rs
+# keystring_generator
 This is a tool to generate rust code with hierarchical string constants from a simple file.
 
 ## Usage
