@@ -66,20 +66,6 @@ pub fn generate(input: &PathBuf) -> Result<(), String> {
 
 /// Generates rust source code from the given input file.
 ///
-/// # Examples
-///
-/// ```
-/// use std::path::PathBuf;
-/// use keystring_generator::generate_with_config;
-/// let input_file = PathBuf::new().join("src/keygen/input.keys");
-/// generate_with_config(
-///     &input_file,
-///     None,
-///     true,
-///     "."
-/// ).unwrap();
-/// ```
-///
 /// # Parameters
 /// The following parameters can be supplied to this function:
 ///  * `input` - Path to the input file in any format as specified in `README.md`
