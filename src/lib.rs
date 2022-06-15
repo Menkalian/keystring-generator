@@ -1,3 +1,7 @@
+//! # Keystring generator
+//! This package is intended to be used in cargo build-scripts.
+//! It can be used to generate constant strings, that are used as keys in maps, configurations, etc.
+
 use std::fs::{create_dir_all, File};
 use std::io::{Read, Write};
 use std::ops::Not;
@@ -53,10 +57,37 @@ impl KeyElement {
     }
 }
 
+/// Generates rust source code from the given input file and saves it to the file `generated/keygen/keygen.rs`.
+///
+/// This function generates the code with a standard configuration. For examples and more configuration options see `generate_with_config`.
 pub fn generate(input: &PathBuf) -> Result<(), String> {
     generate_with_config(input, None, false, ".")
 }
 
+/// Generates rust source code from the given input file.
+///
+/// # Examples
+///
+/// ```
+/// use std::path::PathBuf;
+/// use keystring_generator::generate_with_config;
+/// let input_file = PathBuf::new().join("src/keygen/input.keys");
+/// generate_with_config(
+///     &input_file,
+///     None,
+///     true,
+///     "."
+/// ).unwrap();
+/// ```
+///
+/// # Parameters
+/// The following parameters can be supplied to this function:
+///  * `input` - Path to the input file in any format as specified in `README.md`
+///  * `output_dir` - Directory where the output file is generated. The output file will alyways be named `keygen.rs`.
+///    The necessary directories will be created.
+///    If `None` is supplied the default value (`generated/keygen`) will be used.
+///  * `enable_warnings` - Whether the generated code should trigger warnings, like naming-conventions or unused code. If set to `false`, those warnings will be ignored.
+///  * `separator` - Separator to use in the generated constants (e.g. `"."`, `":"`, `"/"`).
 pub fn generate_with_config(
     input: &PathBuf,
     output_dir: Option<&PathBuf>,

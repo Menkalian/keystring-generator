@@ -1,0 +1,16 @@
+config
+  database
+    host
+    port
+    name
+    user
+    password
+  web
+    port
+    tls
+      enabled
+      certificates
+  cache
+    enabled
+    items
+      amount
