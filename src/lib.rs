@@ -146,7 +146,6 @@ fn count_leading_whitespaces(line: &str) -> usize {
     replaced.len() - unindented.len()
 }
 
-
 #[cfg(test)]
 mod tests {
     use super::*;

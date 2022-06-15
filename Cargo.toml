@@ -1,11 +1,16 @@
 [package]
-name = "keygen"
-description = "Tool to generate rust code with hierarchical string constants from simple file formats"
+name = "keystring-generator"
 version = "0.1.0"
 edition = "2021"
+
+authors = ["Kilian Krampf <kilian@mail.menkalian.de>"]
+description = "Tool to generate rust code with hierarchical string constants from simple file formats"
+keywords = ["generated", "dev-util"]
+categories = ["development-tools", "development-tools::build-utils"]
+readme = "README.md"
+
 license = "MIT"
-homepage = "https://gitlab.com/menkalian/keygen-rs"
-repository = "https://gitlab.com/menkalian/keygen-rs.git"
-documentation = "https://gitlab.com/menkalian/keygen-rs"
+homepage = "https://gitlab.com/menkalian/keystring-generator"
+repository = "https://gitlab.com/menkalian/keystring-generator"
 
 [dependencies]
