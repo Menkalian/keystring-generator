@@ -94,7 +94,7 @@ pub fn generate_with_config(
     if enable_warnings {
         control_macros = "";
     } else {
-        control_macros = "#![allow(dead_code)]\n#![allow(non_upper_case_globals)]\n";
+        control_macros = "#[allow(dead_code)]\n#[allow(non_upper_case_globals)]\n#[allow(non_snake_case)]\n";
     }
 
     let default_pathbuf = PathBuf::new().join("generated/keygen");
