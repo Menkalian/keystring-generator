@@ -58,9 +58,6 @@ hierarchical.keys.with
 
 The output file for the above input will look (syntactically) like this:
 ````rust
-#![allow(dead_code)]
-#![allow(non_upper_case_globals)]
-
 pub mod hierarchical {
     const _BASE : &str = "hierarchical";
     pub mod keys {
