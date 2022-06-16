@@ -1,4 +1,4 @@
- # Badge-Maker
+# keystring_generator
 [![Crates.io][crates-badge]][crates-url]
 [![MIT licensed][mit-badge]][mit-url]
 
@@ -7,8 +7,6 @@
 [mit-badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [mit-url]: https://github.com/cgburgess/badge-maker/blob/master/LICENSE
 
-
-# keystring_generator
 This is a tool to generate rust code with hierarchical string constants from a simple file.
 
 ## Usage
