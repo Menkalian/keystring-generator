@@ -87,4 +87,14 @@ pub mod hierarchical {
 }
 ````
 
+You may then create a file `src/constants.rs` in your project with the following content:
+````rust
+include!("../generated/keygen/keygen.rs");
+````
+
+and include that in your `src/lib.rs` or `src/main.rs` file by declaring:
+````rust
+mod constants;
+````
+
 Therefore you can use the keys like this `constants::hierarchical::keys::with::five::layers` or `constants::hierarchical::keys::BASE`.
