@@ -94,4 +94,4 @@ and include that in your `src/lib.rs` or `src/main.rs` file by declaring:
 mod constants;
 ````
 
-Therefore you can use the keys like this `constants::hierarchical::keys::with::five::layers` or `constants::hierarchical::keys::BASE`.
+Therefore you can use the keys like this `constants::hierarchical::keys::with::five::layers` or `constants::hierarchical::keys::_BASE`.
