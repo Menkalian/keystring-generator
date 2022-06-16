@@ -10,7 +10,7 @@ categories = ["development-tools", "development-tools::build-utils"]
 readme = "README.md"
 
 license = "MIT"
-homepage = "https://gitlab.com/menkalian/keystring-generator"
-repository = "https://gitlab.com/menkalian/keystring-generator"
+homepage = "https://github.com/menkalian/keystring-generator"
+repository = "https://github.com/menkalian/keystring-generator"
 
 [dependencies]
